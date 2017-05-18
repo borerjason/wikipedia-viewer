@@ -1,0 +1,18 @@
+User stories:
+- Search for something in search box, have website give you recommendations.
+- Click search button
+- display articles that match search team from wikipedia
+- click on article to bring you to wikipedia page
+- provide "random" button that pulls up a random wikipedia page
+
+
+Steps:
+
+1. Create html search box
+	- create two buttons
+	    - search (use icon + "search")
+	    - random
+	- position in middle of screen to start out
+	- change CSS location when search button is clicked
+
+2. Create div to hold wikipedia articles  
