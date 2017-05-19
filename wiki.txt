@@ -8,11 +8,12 @@ User stories:
 
 Steps:
 
-1. Create html search box
-	- create two buttons
-	    - search (use icon + "search")
-	    - random
-	- position in middle of screen to start out
-	- change CSS location when search button is clicked
+done 1. Create html search box 
+done	- create two buttons
+done	    - search (use icon + "search")
+done	    - random
+done	- position in middle of screen to start out
+done	- change CSS location when search button is clicked
 
 2. Create div to hold wikipedia articles  
+	

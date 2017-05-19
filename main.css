@@ -1,10 +1,53 @@
 input {
-	
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	background: #fcfcfc;
+	width: 25%;
 }
 
 form {
+	margin-top: 20%;
+	margin-bottom: 4px;
+}
+
+.center {
 	width: 100%;
 	text-align: center;
-	margin-top: 20%;
+}
+
+/* enable absolute positioning */
+.right-addon { 
+    position: relative; 
+    color: #aaa;
+}
+
+/* style icon */
+ .right-addon .fa-search {
+ 	position: relative;
+ 	right:30px;
+ 	
+}
+
+.bttn {
+	color: black;
+	height: 30px;
+	padding: 4px;
+	margin: 2px;
 
 }
+
+button {
+	width: 80px;
+	color: black;
+}
+
+button a {
+	color: black;
+}
+
+
+
+
+
+
