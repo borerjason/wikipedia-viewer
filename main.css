@@ -39,12 +39,14 @@ button {
 	color: black;
 }
 
-.mine {
-	height: 35px;
-
-	width: 90px;
-	
+h4 {
+	font-family: Times, Georgia, Linux Libertine, Cambria, serif;
 }
+
+p {
+	font-family: Helvetica Neue, Helvetica, Arimo, Liberation Sans, Lucida Grande, sans-serif;
+}
+
 
 
 

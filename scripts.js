@@ -10,41 +10,26 @@ function getResults(){
 	var api_endpt = "http://en.wikipedia.org/w/api.php";
 	$.ajax({
 		url: api_endpt,
-		data: { action: 'query', list: 'search', srsearch: $("input[name=search]").val(), format: 'json' }, 
+		data: { action: 'opensearch', search: $("input[name=search]").val(), format: 'json' }, 
 		dataType: "jsonp",
 		type: "GET",
 		error: function(){
 			console.log("could not receive data");
 		},
-		success: printTitles
+		success: printInfo
 	});
-	
-}
+}	
 
-function printTitles(data){
-	var arrSearch = data.query.search;
-	arrSearch.forEach(function(item){
-		console.log(item.title);
-		var snip = item.snippet.split('.');
-		console.log(snip[0]+ ".");
-	});
+function printInfo(data){
+	for(var i = 0; i < 10; i++){
+		var txtTitle = $("<h4></h4>").html(data[1][i]);
+		var txt = $("<p></p>").html(data[2][i]);
+		$(".results").append(txtTitle).append(txt);
+	};
 }
-
-function printSnippet(data){
-	var arrSSearch = data.query.search;
-	arrSSearch.forEach(function(item){
-		var snip = item.snippet.split('.');
-		console.log(snip[0]+ ".");
-	})
-}
-
-function printData(data){
-	console.log(data.query.search[0].title);
-	console.log(data.query.search[0].snippet);
-}  
 
 function moveSearchBar(){
-	$("form").css("margin-top","0");
+	$("form").css("margin-top","10px");
 }
 
 
