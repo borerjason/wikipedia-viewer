@@ -5,17 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Wiki Viewer</title>
         <link rel = "stylesheet" type = "text/css" href = "main.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
+
     <body>
+        <div class = "image">
+            <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png">
+        </div>
         <form class = "center right-addon">
-            <input type = "text" name = "search" placeholder = "Search item" >
-            <span class="fa fa-search"></span>
+            <i class="fa fa-search fa-lg"></i>
+            <input type = "text" name = "search" placeholder = "Search item" autocomplete="off">
+            <i class="fa fa-times-circle fa-lg"></i>
+            <a href = "https://en.wikipedia.org/wiki/Special:Random" target = "_blank" class = "btn" type = "submit">explore</a>
         </form>
 
         <div class = "center">
-          <a href = "https://en.wikipedia.org/wiki/Special:Random" target = "_blank" class = "btn" type = "submit">random</a>
+          
         </div>  
         <div class = "results">
         
