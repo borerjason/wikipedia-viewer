@@ -1,14 +1,19 @@
+html body {
+	background-color: #94618E;
+}
+
 input {
-	padding-left: 5px;
+	padding-left: 40px;
 	border-radius: 5px;
 	border: 1px solid #aaa;
 	background: #fcfcfc;
 	width: 25%;
+	height: 40px;
 }
 
 form {
 	margin-top: 20%;
-	margin-bottom: 4px;
+	margin-bottom: 20px;
 }
 
 .center {
@@ -19,19 +24,30 @@ form {
 /* enable absolute positioning */
 .right-addon { 
     position: relative; 
-    color: #aaa;
+    color: #3f3f3f;
 }
 
 /* style icon */
- .right-addon .fa-search {
+.fa-search {
  	position: relative;
- 	right:30px;
- 	
+ 	left:35px;
+ 	bottom: 1px;	
 }
 
+.fa-times-circle {
+	position:relative;
+	right: 30px;
+
+}
 .btn {
-	color: black;
+	color: #545454;
+	text-decoration: none;
+	background-color: #F8EEE7;
+	margin-bottom: 3px;
 	
+}
+.btn:hover{
+	color: #545454;
 }
 
 button {
@@ -41,10 +57,39 @@ button {
 
 h4 {
 	font-family: Times, Georgia, Linux Libertine, Cambria, serif;
+	text-decoration:none;
 }
 
 p {
 	font-family: Helvetica Neue, Helvetica, Arimo, Liberation Sans, Lucida Grande, sans-serif;
+	text-decoration:none;
+}
+
+input[type=text] {
+	color: #545454;
+	padding-top:2px;
+}
+
+.box {
+  text-decoration: none;
+  color: #545454;
+}
+
+.box:hover {
+  text-decoration: none;
+  color: #545454;
+}
+
+.page {
+	background-color: #F4DECB;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+
+}
+.results{
+	margin-left: 20%;
+  	margin-right: 20%;
 }
 
 
