@@ -10,9 +10,12 @@ input {
 	width: 25%;
 	height: 40px;
 }
+input:focus {
+	outline: none;
+}
 
 form {
-	margin-top: 20%;
+	margin-top: 25%;
 	margin-bottom: 20px;
 }
 
@@ -21,13 +24,11 @@ form {
 	text-align: center;
 }
 
-/* enable absolute positioning */
 .right-addon { 
     position: relative; 
     color: #3f3f3f;
 }
 
-/* style icon */
 .fa-search {
  	position: relative;
  	left:35px;
