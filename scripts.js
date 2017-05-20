@@ -1,9 +1,19 @@
 $(document).ready(function(){
+	
 	$(".search").click(moveSearchBar);
 	$(".fa-search").click(moveSearchBar);
-
 	$(".fa-search").click(getResults);
+	
+	// keyboard - institute after get drop down working
+	// $("input").keypress(function(event){
+    
 
+	$(".fa-times-circle").click(function(){
+		$(".results").empty();
+		$('input[type=text]').val("");
+	});
+
+    
 });
 
 function getResults(){
@@ -21,15 +31,21 @@ function getResults(){
 }	
 
 function printInfo(data){
+	$(".results").empty();
 	for(var i = 0; i < 10; i++){
-		var txtTitle = $("<h4></h4>").html(data[1][i]);
-		var txt = $("<p></p>").html(data[2][i]);
-		$(".results").append(txtTitle).append(txt);
+		$(".results").append("<a href ='" + data[3][i] + "' target = '_blank' class = 'box'  > <div class = 'page'>" + "<h4>" + data[1][i] + "</h4> <br> <p>" + data[2][i] + "</p> </div> </a>");	
 	};
 }
 
 function moveSearchBar(){
-	$("form").css("margin-top","10px");
+	$("form").css("margin-top", "10px");
 }
 
 
+
+// some learnings http://codepen.io/codinger/pen/adwErq
+/*
+var txtTitle = $("<h4></h4>").html(data[1][i]);
+		var txt = $("<p></p>").html(data[2][i]);
+		$(".results").append("<div class = 'page'>" + txtTitle).append(txt + "</div>");
+*/
