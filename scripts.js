@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$(".fa-search").click(getResults);
 
 });
+//https://www.mediawiki.org/wiki/API:Opensearch
 
 function getResults(){
 	var api_endpt = "http://en.wikipedia.org/w/api.php";
